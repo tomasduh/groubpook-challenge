@@ -2,17 +2,19 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .container {
-    max-width: 1200px; /* Ancho máximo del contenedor */
-    margin: 0 auto; /* Centrar el contenedor en la página */
-    padding: 0 15px; /* Relleno a los lados del contenedor */
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 15px; 
 }
 
 .hotel-card {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    border: 1px solid #ccc; /* Borde de 1px */
-    border-radius: 5px; /* Borde redondeado */
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    height: 200px;
+
 }
 
 .hotel-card h2 {
@@ -26,7 +28,7 @@ body {
 }
 
 .hotel-card img {
-    width: 150px; 
+    width: 300px; 
     height: 100%;
     margin-right: 8px;
 }
@@ -99,15 +101,15 @@ input[type="number"],
 }
 
 .select-container select {
-    padding-left: 30px; /* Ajusta según el ancho del icono */
+    padding-left: 30px;
 }
 
 .select-container i {
     position: absolute;
-    left: 10px; /* Ajusta según el espacio que quieras entre el icono y el borde izquierdo */
+    left: 10px; 
     top: 50%;
     transform: translateY(-50%);
-    color: #aaa; /* Color del icono */
+    color: #aaa; 
 }
 
 .btn-filter  {
