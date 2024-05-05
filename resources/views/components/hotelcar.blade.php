@@ -11,6 +11,9 @@
                         @include('components.amenties')
                     </div>
                 <p><strong>Price:</strong> {{ $hotel['rate_per_night']['lowest'] }}</p>
+                @isset($hotel['link'])
+                    <a href="{{ $hotel['link'] }}" class="btn">Visit Hotel</a>
+                @endisset
             </div>
         </div>
     @endif
