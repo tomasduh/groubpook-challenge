@@ -9,4 +9,7 @@
     <script src="https://kit.fontawesome.com/78b58624f2.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="title" >
+        <h1>Best Hotels</h1>
+    </div>
 

@@ -8,7 +8,7 @@
         <label >Filters:</label>
         <select class="select" name="sort_by">
             <option value="">Select...</option>
-            <option value="1" {{ $req->sort_by == 1 ? 'selected' : '' }}>Lowest price</option>
+            <option value="3" {{ $req->sort_by == 3 ? 'selected' : '' }}>Lowest price</option>
             <option value="8" {{ $req->sort_by == 8 ? 'selected' : '' }}>Highest rating</option>
             <option value="13" {{ $req->sort_by == 13 ? 'selected' : '' }}>Most reviewd</option>
         </select>

@@ -1,11 +1,17 @@
 @foreach($hotels['properties'] as $hotel)
-    @isset($hotel['rate_per_night'])
+    @if(isset($hotel['rate_per_night']) && isset($hotel['images']))
         <div class="hotel-card">
             <img src="{{ $hotel['images'][0]['thumbnail'] }}" alt="{{ $hotel['name'] }}">
             <div>
-                <h2>{{ $hotel['name'] }}</h2>
-                <p><strong>Price:</strong> {{ $hotel['rate_per_night']['lowest'] }}$ per night</p>
+                <h2>{{ $hotel['name'] }}
+                    @isset($hotel['overall_rating'])
+                    {{ $hotel['overall_rating'] }} <i class="fa-solid fa-star" style="color: #FFD43B;"></i>({{ $hotel['reviews'] }})
+                    @endisset
+                    <div class="amenties"> 
+                        @include('components.amenties')
+                    </div>
+                <p><strong>Price:</strong> {{ $hotel['rate_per_night']['lowest'] }}</p>
             </div>
         </div>
-    @endisset
+    @endif
 @endforeach
