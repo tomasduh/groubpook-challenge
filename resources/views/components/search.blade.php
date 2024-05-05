@@ -11,9 +11,9 @@
     @endisset>
     <div class="select-container">
         <i class="fas fa-user"></i>
-        <select name="adults"
+        <select name="adults">
             @for($i = 1; $i <= 5; $i++)
-            <option value="{{ $i }}" {{ isset($req->adults) && $req->adults == $i ? 'selected' :  ''}}>{{ $i }}</option>
+                <option value="{{ $i }}" {{ isset($req->adults) && $req->adults == $i ? 'selected' :  ''}}>{{ $i }}</option>
             @endfor
         </select>
     </div>

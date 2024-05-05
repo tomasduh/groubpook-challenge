@@ -133,7 +133,6 @@ input[type="number"],
 
 .amenties {
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-top: 20px;
     font-size: small;
