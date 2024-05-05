@@ -1,0 +1,110 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor en la página */
+    padding: 0 15px; /* Relleno a los lados del contenedor */
+}
+
+.hotel-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Borde de 1px */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+.hotel-card h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.hotel-card p {
+    font-size: 16px;
+}
+
+.hotel-card img {
+    width: 150px; 
+    height: 100%;
+    margin-right: 8px;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input[type="text"],
+.search input[type="date"],
+.search select {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.select{
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #0056b3;
+}
+
+.alert {
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert-danger strong {
+    font-weight: bold;
+}
+
+.select-container {
+    position: relative;
+}
+
+.select-container select {
+    padding-left: 30px; /* Ajusta según el ancho del icono */
+}
+
+.select-container i {
+    position: absolute;
+    left: 10px; /* Ajusta según el espacio que quieras entre el icono y el borde izquierdo */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa; /* Color del icono */
+}
