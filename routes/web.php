@@ -7,3 +7,5 @@ Route::get('/', [HomeController::class, 'index']);
 
 Route::post('/search', [HomeController::class, 'search'])->name('search');
 
+Route::post('/filter', [HomeController::class, 'filterSearch'])->name('filter');
+
