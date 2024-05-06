@@ -4,11 +4,11 @@
         value="{{ $hotels['search_parameters']['q'] }}"
     @endisset>
     <input type="date" name="check_in_date"  @isset($hotels)
-     value="{{ $hotels['search_parameters']['check_in_date'] }}"
-    @endisset>to
+     value="{{ $hotels['search_parameters']['check_in_date'] }}" 
+    @endisset required>to
     <input type="date" name="check_out_date"  @isset($hotels)
-        value="{{ $hotels['search_parameters']['check_out_date'] }}"
-    @endisset>
+        value="{{ $hotels['search_parameters']['check_out_date'] }}" required
+    @endisset required>
     <div class="select-container">
         <i class="fas fa-user"></i>
         <select name="adults">

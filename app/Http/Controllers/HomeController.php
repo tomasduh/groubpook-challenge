@@ -21,10 +21,10 @@ class HomeController extends Controller
         $currentDate = strtotime($currentDate->format('Y-m-d H:i:s'));
 
         if($checkInDate < $currentDate || $checkOutDate < $currentDate) {
-            return redirect()->back()->with('error', 'The check-in or check-out date cannot be earlier than the current date');
+            return redirect()->route('home')->with('error', 'The check-in or check-out date cannot be earlier than the current date');
         }
         if($checkOutDate < $checkInDate) {
-            return redirect()->back()->with('error', 'The check-out date cannot be earlier than the check-in date');
+            return redirect()->route('home')->with('error', 'The check-out date cannot be earlier than the check-in date');
         }
 
         $apiKey = "930ba822223774a9733bcacdeefce2ef1c6d81a3fd382b4601bc2888b1e27d03"; 
@@ -49,10 +49,10 @@ class HomeController extends Controller
         $currentDate = strtotime($currentDate->format('Y-m-d H:i:s'));
     
         if($checkInDate < $currentDate || $checkOutDate < $currentDate) {
-            return redirect()->back()->with('error', 'The check-in or check-out date cannot be earlier than the current date');
+            return redirect()->route('home')->with('error', 'The check-in or check-out date cannot be earlier than the current date');
         }
         if($checkOutDate < $checkInDate) {
-            return redirect()->back()->with('error', 'The check-out date cannot be earlier than the check-in date');
+            return redirect()->route('home')->with('error', 'The check-out date cannot be earlier than the check-in date');
         }
     
         $apiKey = "930ba822223774a9733bcacdeefce2ef1c6d81a3fd382b4601bc2888b1e27d03"; 
