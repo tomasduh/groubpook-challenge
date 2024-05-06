@@ -1,19 +1,19 @@
 <form action="{{ route('search') }}" method="post">
     @csrf
-    <input type="text" name="q" placeholder="Location or Hotels" @isset($req)
-        value="{{ $req->q }}"
+    <input type="text" name="q" placeholder="Location or Hotels" @isset($hotels)
+        value="{{ $hotels['search_parameters']['q'] }}"
     @endisset>
-    <input type="date" name="check_in_date" @isset($req)
-     value="{{ $req->check_in_date }}"
+    <input type="date" name="check_in_date"  @isset($hotels)
+     value="{{ $hotels['search_parameters']['check_in_date'] }}"
     @endisset>to
-    <input type="date" name="check_out_date" @isset($req)
-        value="{{ $req->check_out_date }}"
+    <input type="date" name="check_out_date"  @isset($hotels)
+        value="{{ $hotels['search_parameters']['check_out_date'] }}"
     @endisset>
     <div class="select-container">
         <i class="fas fa-user"></i>
         <select name="adults">
             @for($i = 1; $i <= 5; $i++)
-                <option value="{{ $i }}" {{ isset($req->adults) && $req->adults == $i ? 'selected' :  ''}}>{{ $i }}</option>
+                <option value="{{ $i }}" {{ isset($hotels['search_parameters']['adults']) && $hotels['search_parameters']['adults'] == $i ? 'selected' :  ''}}>{{ $i }}</option>
             @endfor
         </select>
     </div>

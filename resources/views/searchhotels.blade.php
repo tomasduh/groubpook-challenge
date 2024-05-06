@@ -8,7 +8,8 @@
 
     <div class="container">
         @include('components.filters')
-        <label>{{ $req->q }}</label>
+        <label>{{ $hotels['search_parameters']['q'] }}</label>
         @include('components.hotelcar')
+        @include('components.pagination')
     </div>
 @include('footer')
